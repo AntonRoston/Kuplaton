@@ -4,41 +4,48 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Куплатон</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Roboto:wght@300;400;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<header>
+		<header class="page__header">
 			<nav>
-				<a href="./index.html"><img src="./images/logo_Orion.svg" alt="logo" width="200" /></a>
-				<ul>
-					<li><a href="">Переваги</a></li>
-					<li><a href="">Де купити?</a></li>
+				<!-- <a href="./index.html" class="logo"><img src="./images/logo_Orion.svg" alt="logo" width="200" /></a> -->
+				<ul class="site__nav">
+					<li><a href="" class="link">Переваги</a></li>
+					<li><a href="" class="link">Де купити?</a></li>
 				</ul>
 				<ul>
-					<li><a href="" aria-label="facebook">facebook</a></li>
-					<li><a href="" aria-label="instagram">instagram</a></li>
-					<li><a href="">Знайти зі знижкою</a></li>
+					<li><a href="" aria-label="facebook" class="link" aria-label="facebook">facebook</a></li>
+					<li><a href="" aria-label="instagram" class="link" aria-label="instagram">instagram</a></li>
+					<li><a href="" class="button">Знайти зі знижкою</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<section>
-				<h1>КУПЛАТОН</h1>
-				<p
+			<section class="hero">
+				<h1 class="hero__title">КУПЛАТОН</h1>
+				<p class="hero__text"
 					>Коли здуття турбує –<br />
-					<span>КУПЛАТОН</span> врятує</p
+					<span class="hero__text-acent">КУПЛАТОН</span> врятує</p
 				>
-				<img src="./images/куплатон_box.png" alt="куплатон_box" />
+				<img src="./images/куплатон_box.png" alt="куплатон_box" width="300" />
 			</section>
-			<section>
-				<h2>Спосіб застосування та дози</h2>
-				<ul>
+			<section class="section">
+				<h2 class="section__title">Спосіб застосування та дози</h2>
+				<ul class="instruction">
 					<li
-						><h3>Немовлям</h3>
+						><h3 class="instruction__title">Немовлям</h3>
 
 						<p>для лікування коліки 4 краплі змішують з невеликою кількістью рідини перед кожним годуванням</p>
 					</li>
 					<li
-						><h3>Немовлям та дітям до 6 років</h3>
+						><h3 class="instruction__title">Немовлям та дітям до 6 років</h3>
 
 						<p
 							>від 1 до 3 крапель 4 рази на добу, змішуючи з невеликою кулькістю рідини у пляшці з дитячим харчуванням
@@ -46,20 +53,20 @@
 						>
 					</li>
 					<li
-						><h3>Дітям від 6 до 10 років</h3>
+						><h3 class="instruction__title">Дітям від 6 до 10 років</h3>
 
 						<p>по 4 краплі 4 рази на добу, змішуючи з невеликою кількістю рідини</p>
 					</li>
 					<li
-						><h3>Дорослим та дітям від 10 років</h3>
+						><h3 class="instruction__title">Дорослим та дітям від 10 років</h3>
 
 						<p>по 5 крапель 4 рази на добу при метеоризмі, змішуючи з невеликою кількістю рідини</p>
 					</li>
 				</ul>
 			</section>
-			<section>
-				<h2>Переваги</h2>
-				<ul>
+			<section class="section">
+				<h2 class="section__title">Переваги</h2>
+				<ul class="advantaches">
 					<li>
 						<p>Єдиний диметикон в Україні</p>
 					</li>
@@ -78,12 +85,12 @@
 				</ul>
 				<ul>
 					<li><img src="" alt="" /></li>
-					<li><a href="">Знайти зі знижкою</a></li>
-					<li><a href="">Завантажити інтсрукцію</a></li>
+					<li><a href="" class="button">Знайти зі знижкою</a></li>
+					<li><a href="" class="button">Завантажити інтсрукцію</a></li>
 				</ul>
 			</section>
-			<section>
-				<h2>Де купити?</h2>
+			<section class="section">
+				<h2 class="section__title">Де купити?</h2>
 				<p>Шукайте Куплатон в аптеках вашого міста</p>
 				<ul>
 					<li><a href="https://www.apteka24.ua/" target="_blank" aria-label="apteka24.ua">apteka24.ua</a></li>
@@ -92,8 +99,8 @@
 					<li><a href="https://www.add.ua/ua/" target="_blank" aria-label="add.ua">add.ua</a></li>
 				</ul>
 			</section>
-			<section>
-				<h2>САМОЛІКУВАННЯ МОЖЕ БУТИ ШКІДЛИВИМ ДЛЯ ВАШОГО ЗДОРОВ’Я</h2>
+			<section class="section">
+				<h2 class="section__title">САМОЛІКУВАННЯ МОЖЕ БУТИ ШКІДЛИВИМ ДЛЯ ВАШОГО ЗДОРОВ’Я</h2>
 				<p
 					>Реклама лікарського засобу. Перед застосуванням обов’язково ознайомтеся з інструкцією лікарського засобу та
 					проконсультуйтеся з лікарем. Лікарський засіб має протипоказання. Реєстраційний номер: UA/7479/01/01

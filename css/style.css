@@ -1,0 +1,84 @@
+/* black #000000 */
+/* white #ffffff */
+/* firm_site #849EBB */
+/* firm_orionvar #0076bf */
+/* grey #A6A8AB */
+:root {
+    --primary-text-color: #000000;
+    --primary-white-color:#ffffff;
+    --accent-color: #0076bf;
+    --firm-site-color: #849EBB;
+
+}
+
+
+/* global */
+body {
+	background-color: var(--primary-white-color);
+	color: var(--primary-text-color);
+
+    
+
+    font-family: 'Comfortaa', cursive;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.015em;
+}
+ul {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--primary-text-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Hero */
+
+.hero__title {
+font-size: 48px;
+font-weight: 700;
+}
+
+.hero__text{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 42px;
+line-height: 1.2;
+}
+
+.hero__text-acent {
+    
+    color: var(--firm-site-color);
+    font-weight: 700;
+}
+
+.section__title{
+    /* font-weight:500; */
+    font-size: 42px;
+}
+.instruction__title {
+    font-weight:500;
+    font-size: 32px;
+}
+
+.link:hover,
+.link:focus {
+	color:var(--accent-color);
+}
+
+.button {
+    color: var(--primary-text-color);
+    background-color: var(--firm-site-color);
+    padding: 12px 24px;
+    display: inline-block;
+    border: 1px solid black;
+}
