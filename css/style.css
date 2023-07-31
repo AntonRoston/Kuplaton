@@ -248,7 +248,7 @@ a {
 }
 
 .advantaches-bg {
-	background-image: linear-gradient(rgba(255, 255, 255, 1), var(--firm-site-color), rgba(255, 255, 255, 1));
+	background-image: linear-gradient(rgba(255, 255, 255, 1) , var(--firm-site-color) 50px, rgba(255, 255, 255, 1));
 }
 
 .advantaches {
@@ -303,8 +303,25 @@ a {
 }
 
 .search-set__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: green;
 	border-radius: 3px;
+	width: 220px;
+	height: 75px;
+	margin-right: 20px;
+}
+
+.search-set__item:hover{
+background-color: var(--accent-color);
+}
+
+.search-set__item>a{
+	padding: 20px;
+}
+.search-set__item:last-child{
+margin-right: 0;
 }
 .search-icon {
 }
