@@ -67,12 +67,12 @@ a {
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
-	outline: 3px solid tomato;
+	/* outline: 3px solid tomato; */
 }
 
 .section {
-	/* padding-top: 94px;
-	padding-bottom: 94px; */
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .section-title {
@@ -113,6 +113,35 @@ a {
 	align-items: center;
 }
 
+.site-soc__icon{
+display: flex;
+    justify-content: center;
+
+	margin-right: 40px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: var(--primary-white-color);
+}
+
+.site-soc__icon > a{
+	display: flex;
+	align-items: center;
+	
+}
+
+.site-soc__icon:hover,
+.btn-icon:hover{
+	background-color: var(--accent-color);
+	fill: var(--primary-white-color);
+}
+.btn-icon{
+	width: 35px;
+	height: 35px;
+	fill: var(--firm-site-color);
+
+}
+
 .button {
 	color: var(--primary-text-color);
 	background-color: var(--firm-site-color);
@@ -128,6 +157,11 @@ a {
 	background-color: var(--primary-white-color);
 	margin-right: auto;
 	min-width: 250px;
+}
+
+.site-nav__button:hover{
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
 }
 
 /* Hero */
@@ -166,6 +200,20 @@ a {
 
 /* instruction */
 
+.instruction-item{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+	border-bottom: var(--firm-site-color) 2px solid;
+}
+
+.instruction-icon{
+	width: 100px;
+	fill: var(--firm-site-color);
+}
+
+
 .instruction-title__primary {
 	color: var(--firm-site-color);
 }
@@ -174,6 +222,12 @@ a {
 	font-weight: 500;
 	font-size: 32px;
 	color: var(--firm-site-color);
+
+	width: 300px;
+}
+
+.instruction-text{
+	width: 600px;
 }
 
 .link:hover,
@@ -187,8 +241,26 @@ a {
 
 /* advantaches */
 
+.btn-list__item{
+	margin-left: 40px;
+}
+
+.advantaches-button:hover{
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+}
+
 .advantaches-bg {
 	background-image: linear-gradient(rgba(255, 255, 255, 1), var(--firm-site-color), rgba(255, 255, 255, 1));
+}
+
+.advantaches{
+
+}
+.advantaches-block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .advantaches-text {
 	display: inline-flex;
@@ -202,12 +274,121 @@ a {
 	width: 25px;
 	height: 25px;
 	background-image: url(../images/check_mark.svg);
+	background-repeat: no-repeat;
 }
-/* .advantaches-item{
-	background-image: url(../images/check_mark.svg);
-	background-size: contain;
 
-} */
 /* search */
 
+.section.search{
+	display:  flex;
+	align-items: center;
+	justify-content: center;
+	height: 800px;
+	background-image: url(../images/drop_water_bg.svg);
+	background-repeat: no-repeat;
+	background-position:500px -50px;
+}
+
+.search-text{
+	display: flex;
+	justify-content: center;
+}
+.search-set{
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+.search-set__item{
+	padding: 20px;
+	width: 250px;
+	background-color: green;
+	border-radius: 3px;
+}
+.search-icon{
+
+}
+
+/* info */
+.info-con{
+	display: flex;
+	justify-content: center;
+	width: auto;
+	padding: 0;
+}
+
+.info-warning{
+	width: 1200px;
+	height: 300px;
+	padding-bottom: 20px;
+}
+
+.info-text{
+	display: flex;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.info-list{
+	/* display: flex; */
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+.info-item > a{
+	/* text-decoration: none; */
+	color: var(--primary-text-color);
+	font-style: normal;
+}
+
+.info-item > a:hover{
+	color: var(--accent-color);
+}
 /* footer */
+
+.footer{
+	background-color: var(--primary-text-color);
+}
+
+.footer-con{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-logo{
+	fill: var(--primary-white-color);
+}
+.footer-logo:hover{
+	fill: var(--accent-color);
+}
+
+.footer__text{
+	color: var(--primary-white-color);
+}
+
+.footer-site-soc{
+	display: flex;
+	
+}
+.footer-site-soc__icon>a{
+	display: flex;
+    justify-content: center;
+	align-items: center;
+
+	margin-right: 40px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: var(--primary-white-color);
+
+}
+
+.footer-btn-icon{
+	width: 35px;
+	height: 35px;
+
+}
+
+.footer-site-soc__icon>a:hover{
+	background-color: var(--accent-color);
+}
