@@ -81,9 +81,9 @@
 				</div>
 			</section>
 
-			<section class="section advantaches-bg">
+			<section class="section advantaches-bg" id="advantaches">
 				<div class="conteiner">
-					<h2 class="visually-hidden" id="advantaches">Переваги</h2>
+					<h2 class="visually-hidden" >Переваги</h2>
 					<div class="advantaches-block">
 						<ul class="advantaches">
 							<li class="advantaches-item">
@@ -118,9 +118,9 @@
 				</div>
 			</section>
 
-			<section class="section">
+			<section class="section" id="search">
 				<div class="conteiner search">
-					<h2 class="section-title" id="search">Де купити?</h2>
+					<h2 class="section-title" >Де купити?</h2>
 					<p class="search-text">Шукайте Куплатон в аптеках вашого міста</p>
 					<ul class="search-set">
 						<li class="search-set__item search-set__item--01"
@@ -188,5 +188,12 @@
 				</ul>
 			</div>
 		</footer>
+		<script>
+			const { height: pageHeaderHeight } = document
+			.querySelector(".header")
+			.getBoundingClientRect();
+
+			document.body.style.paddingTop = `${pageHeaderHeight}px`;
+		</script> 
 	</body>
 </html>

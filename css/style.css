@@ -21,6 +21,7 @@ body {
 	color: var(--primary-text-color);
 
 	margin: 0;
+	/* padding-top: 100px; */
 
 	font-family: "Comfortaa", cursive;
 	font-weight: 300;
@@ -80,8 +81,9 @@ a {
 }
 
 .section {
-	padding-top: 50px;
+	padding-top: 100px;
 	padding-bottom: 50px;
+
 }
 
 .section-title {
@@ -91,8 +93,15 @@ a {
 }
 /* Header */
 .header {
+
+	position: fixed;
+top: 0;
+left: 0;
+z-index: 2;
+
+	width: 100%;
 	background-color: var(--firm-site-color);
-	height: auto;
+	min-height: 100px;
 }
 .header-nav,
 .site-nav,
