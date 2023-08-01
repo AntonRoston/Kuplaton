@@ -248,7 +248,7 @@ a {
 }
 
 .advantaches-bg {
-	background-image: linear-gradient(rgba(255, 255, 255, 1) , var(--firm-site-color) 50px, rgba(255, 255, 255, 1));
+	background-image: linear-gradient(rgba(255, 255, 255, 1) , var(--firm-site-color) 200px, rgba(255, 255, 255, 1));
 }
 
 .advantaches {
