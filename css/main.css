@@ -274,18 +274,28 @@ a {
   position: relative;
   height: 700px;
   padding-top: 80px;
-  background-image: url(../images/drop_water.svg), url(../images/background_img.jpg);
   background-repeat: no-repeat;
-  background-position: -3px 60px, right top;
-  background-size: 160px, auto;
+  background-position: right top;
+  background-size: auto;
   -webkit-box-shadow: inset -30px -30px 30px rgb(255, 255, 255);
           box-shadow: inset -30px -30px 30px rgb(255, 255, 255);
 }
 
 .hero-title {
+  position: relative;
   font-size: 62px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+.hero-title__img {
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  z-index: -1;
+  width: 150px;
+}
+.hero-title__img img {
+  width: 100%;
 }
 
 .hero-text {
@@ -303,8 +313,8 @@ a {
 
 @media screen and (max-width: 1200px) {
   .hero-bg {
-    background-position: -3px 60px, right top;
-    background-size: 160px, auto;
+    background-size: 80%;
+    z-index: -2;
   }
   .hero-title {
     font-size: 62px;
