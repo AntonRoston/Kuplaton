@@ -1,0 +1,36 @@
+.instruction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-bottom: var(--firm-site-color) 2px solid;
+}
+
+.instruction-icon {
+    width: 75px;
+    fill: var(--firm-site-color);
+}
+
+.instruction-title__primary {
+    color: var(--firm-site-color);
+}
+
+.instruction-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.5;
+
+    color: var(--firm-site-color);
+
+    width: 300px;
+    text-align: center;
+}
+
+.instruction-text {
+    width: 600px;
+    line-height: 1.5;
+}
+
+.btn-list {
+    display: flex;
+}

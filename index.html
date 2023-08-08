@@ -10,7 +10,8 @@
 			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Roboto:wght@300;400;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/style.css" />
+		<!-- <link rel="stylesheet" href="./css/style.css" /> -->
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -40,16 +41,14 @@
 				<div class="conteiner hero-bg">
 					<div class="conteiner-hero">
 						<h1 class="hero-title">КУПЛАТОН</h1>
-						<div class="hero-title__img">
-							
-						</div>
-					<p class="hero-text"
-						>Коли здуття турбує –<br />
-						<span class="hero-text__acent">КУПЛАТОН</span> врятує</p
-					>
-					<div class="hero-img"><img src="./images/box_kuplfton.webp" alt="куплатон_box" width="250" /></div>
-				</div>
+						<div class="hero-title__img"> </div>
+						<p class="hero-text"
+							>Коли здуття турбує –<br />
+							<span class="hero-text__acent">КУПЛАТОН</span> врятує</p
+						>
+						<div class="hero-img"><img src="./images/box_kuplfton.webp" alt="куплатон_box" width="250" /></div>
 					</div>
+				</div>
 			</section>
 			<section class="section">
 				<div class="conteiner">
@@ -88,7 +87,7 @@
 
 			<section class="section advantaches-bg" id="advantaches">
 				<div class="conteiner">
-					<h2 class="visually-hidden" >Переваги</h2>
+					<h2 class="visually-hidden">Переваги</h2>
 					<div class="advantaches-block">
 						<ul class="advantaches">
 							<li class="advantaches-item">
@@ -125,25 +124,25 @@
 
 			<section class="section" id="search">
 				<div class="conteiner search">
-					<h2 class="section-title" >Де купити?</h2>
+					<h2 class="section-title">Де купити?</h2>
 					<p class="search-text">Шукайте Куплатон в аптеках вашого міста</p>
 					<ul class="search-set">
 						<li class="search-set__item search-set__item--01"
 							><a href="https://www.apteka24.ua/" target="_blank" aria-label="apteka24.ua"
-								><img src="./images/logotype_apteka24.svg" alt=""></a
+								><img src="./images/logotype_apteka24.svg" alt="" /></a
 						></li>
 
 						<li class="search-set__item search-set__item--02"
 							><a href="https://apteka911.ua/ua" target="_blank" aria-label="apteka911.ua"
-								><img src="./images/logotype_apteka911.svg" alt=""></a
+								><img src="./images/logotype_apteka911.svg" alt="" /></a
 						></li>
 						<li class="search-set__item search-set__item--03"
 							><a href="https://tabletki.ua/" target="_blank" aria-label="tabletki.ua"
-								><img src="./images/logo-tabletki_new.svg" alt="" width="200"></a
+								><img src="./images/logo-tabletki_new.svg" alt="" width="200" /></a
 						></li>
 						<li class="search-set__item search-set__item--04"
 							><a href="https://www.add.ua/ua/" target="_blank" aria-label="add.ua"
-								><img src="./images/logo_dobrogo_dnia.svg" alt="" width="200"></a
+								><img src="./images/logo_dobrogo_dnia.svg" alt="" width="200" /></a
 						></li>
 					</ul>
 				</div>
@@ -194,11 +193,9 @@
 			</div>
 		</footer>
 		<script>
-			const { height: pageHeaderHeight } = document
-			.querySelector(".header")
-			.getBoundingClientRect();
+			const { height: pageHeaderHeight } = document.querySelector(".header").getBoundingClientRect();
 
 			document.body.style.paddingTop = `${pageHeaderHeight}px`;
-		</script> 
+		</script>
 	</body>
 </html>

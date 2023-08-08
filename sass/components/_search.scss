@@ -1,0 +1,77 @@
+.search {
+    height: 700px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search::after {
+    content: "";
+    background: url(../images/drop_water_bg.svg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: 345px -55px;
+    background-size: 850px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.search-text {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.search-set {
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-set__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    border-radius: 3px;
+    width: 220px;
+    height: 75px;
+    margin-right: 20px;
+
+    transform: scale(1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-set__item--02 {
+    background-color: #94140a;
+}
+
+.search-set__item--03,
+.search-set__item--04 {
+    background-color: #48a128;
+}
+
+.search-set__item:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.01);
+}
+
+.search-set__item>a {
+    padding: 20px;
+}
+
+.search-set__item:last-child {
+    margin-right: 0;
+}
+
+.search-icon {}

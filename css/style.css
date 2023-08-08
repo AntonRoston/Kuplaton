@@ -3,6 +3,8 @@
 /* firm_site #849EBB */
 /* firm_orionvar #0076bf */
 /* grey #A6A8AB */
+
+/* cubic-bezier(0.4, 0, 0.2, 1) */
 :root {
 	--primary-text-color: #000000;
 	--primary-white-color: #ffffff;
@@ -118,37 +120,23 @@ a {
 
 .site-nav__link {
 	color: var(--primary-white-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+	color: var(--accent-color);
+}
+
 .header-nav {
 	display: flex;
 	align-items: center;
 }
 
-.site-soc__icon {
-	display: flex;
-	justify-content: center;
-
-	margin-right: 40px;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: var(--primary-white-color);
-}
-
-.site-soc__icon > a {
-	display: flex;
-	align-items: center;
-}
-
-.site-soc__icon:hover,
-.btn-icon:hover {
-	background-color: var(--accent-color);
-	fill: var(--primary-white-color);
-}
 .btn-icon {
 	width: 25px;
 	height: 25px;
-	fill: var(--firm-site-color);
+	/* fill: var(--firm-site-color); */
 }
 
 .button {
@@ -160,17 +148,55 @@ a {
 	text-align: center;
 	border-radius: 5px;
 	font-weight: 500;
+
+	transform: scale(1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-soc__icon {
+	display: flex;
+	justify-content: center;
+
+	margin-right: 40px;
+}
+
+.site-soc__icon > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--primary-white-color);
+	fill: var(--firm-site-color);
+
+	transform: scale(1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-soc__icon > a:hover {
+	background-color: var(--accent-color);
+	fill: var(--primary-white-color);
+
+	transform: scale(1);
 }
 
 .site-nav__button {
 	background-color: var(--primary-white-color);
 	margin-right: auto;
 	min-width: 250px;
+
+	transform: scale(1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav__button:hover {
 	background-color: var(--accent-color);
 	color: var(--primary-white-color);
+	transform: scale(1.01);
 }
 
 /* Hero */
@@ -185,12 +211,10 @@ a {
 	position: relative;
 	height: 700px;
 	padding-top: 80px;
-	/* background-color: var(--grey-color); */
 	background-image: url(../images/drop_water.svg), url(../images/background_img.jpg);
 	background-repeat: no-repeat;
 	background-position: -3px 60px, right top;
 	background-size: 160px, auto;
-	/* transform: translateY(5px); */
 	box-shadow: inset -30px -30px 30px rgba(255, 255, 255, 1);
 }
 
@@ -200,18 +224,6 @@ a {
 	margin-bottom: 30px;
 	z-index: 2;
 }
-
-/* .hero-title__img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-image: url(../images/drop_water.svg);
-	height: 200px;
-	width: 400px;
-	background-position: -3px 10px;
-	z-index: 1;
-	background-repeat: no-repeat;
-} */
 
 .hero-text {
 	font-family: "Roboto", sans-serif;
@@ -261,11 +273,6 @@ a {
 	line-height: 1.5;
 }
 
-.link:hover,
-.link:focus {
-	color: var(--accent-color);
-}
-
 .btn-list {
 	display: flex;
 }
@@ -279,6 +286,9 @@ a {
 .advantaches-button:hover {
 	background-color: var(--accent-color);
 	color: var(--primary-white-color);
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transform: scale(1.02);
 }
 
 .advantaches-bg {
@@ -362,6 +372,9 @@ a {
 	width: 220px;
 	height: 75px;
 	margin-right: 20px;
+
+	transform: scale(1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .search-set__item--02 {
 	background-color: #94140a;
@@ -373,6 +386,7 @@ a {
 
 .search-set__item:hover {
 	background-color: var(--accent-color);
+	transform: scale(1.01);
 }
 
 .search-set__item > a {
@@ -436,6 +450,7 @@ a {
 .footer-logo {
 	fill: var(--primary-white-color);
 	width: 200px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-logo:hover {
 	fill: var(--accent-color);
@@ -458,6 +473,8 @@ a {
 	height: 50px;
 	border-radius: 50%;
 	background-color: var(--primary-white-color);
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn-icon {

@@ -1,0 +1,39 @@
+.info-con {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 0;
+}
+
+.info-warning {
+    width: 1200px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+.info-text {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-list {
+    /* display: flex; */
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item>a {
+    /* text-decoration: none; */
+    color: var(--primary-text-color);
+    font-style: normal;
+}
+
+.info-item>a:hover {
+    color: var(--accent-color);
+}

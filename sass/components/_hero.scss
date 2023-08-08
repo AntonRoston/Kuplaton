@@ -1,0 +1,58 @@
+.hero {
+    padding-top: 0;
+}
+
+.conteiner-hero {
+    padding-top: 50px;
+}
+
+.hero-bg {
+    position: relative;
+    height: 700px;
+    padding-top: 80px;
+    background-image: url(../images/drop_water.svg), url(../images/background_img.jpg);
+    background-repeat: no-repeat;
+    background-position: -3px 60px, right top;
+    background-size: 160px, auto;
+    box-shadow: inset -30px -30px 30px rgba(255, 255, 255, 1);
+}
+
+.hero-title {
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.hero-text__acent {
+    color: var(--firm-site-color);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1200px){
+
+        .hero-bg{
+
+            background-position: -3px 60px, right top;
+                background-size: 160px, auto;
+        }
+
+        .hero-title{
+    font-size: 62px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        }
+.hero-text{
+    font-weight: 400;
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 50px;
+}
+}

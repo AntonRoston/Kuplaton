@@ -1,0 +1,45 @@
+.btn-list__item {
+    margin-left: 40px;
+}
+
+.advantaches-button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.02);
+}
+
+.advantaches-bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 1), var(--firm-site-color) 200px, rgba(255, 255, 255, 1));
+}
+
+.advantaches {}
+
+.advantaches-block {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantaches-item {
+    margin-bottom: 20px;
+}
+
+.advantaches-text {
+    display: inline-flex;
+    font-size: 28px;
+}
+
+.advantaches-text::before {
+    display: inline-flex;
+    align-items: center;
+    content: "";
+    /* background-color: red; */
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/check_mark.svg);
+    background-repeat: no-repeat;
+}
