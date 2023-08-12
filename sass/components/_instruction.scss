@@ -34,3 +34,48 @@
 .btn-list {
     display: flex;
 }
+
+@media screen and (max-width: 1200px){
+    .instruction-item{
+        min-height: 140px;
+    }
+
+    .instruction-title{
+        font-size: 24px;
+        max-width: 200px;
+    }
+        .instruction-text {
+            max-width: 300px;
+            line-height: 1.5;
+        }
+                .instruction-icon{
+                    width: 60px;
+                    height: 100px;
+                }
+}
+
+@media screen and (max-width: 767px){
+
+.instruction-item{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+         .instruction-title {
+             font-size: 24px;
+             max-width: 100%;
+             margin: 0 auto;
+         }
+    
+         .instruction-text {
+            max-width: 100%;
+             line-height: 1.5;
+             padding-bottom: 10px;
+         }
+    
+         .instruction-icon {
+             width: 60px;
+             height: 100px;
+         }
+}

@@ -43,3 +43,63 @@
     background-image: url(../images/check_mark.svg);
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1200px){
+
+    .btn-list__item {
+            margin-left: 30px;
+        }
+        .advantaches-block{
+            padding-top: 30px;
+        }
+        .advantaches-item {
+                    margin-bottom: 15px;
+                }
+
+        .advantaches-text{
+            font-size: 22px;
+            &::before {
+                width: 20px;
+                    height: 20px;
+            }
+            }
+        .advantaches-img__bottle{
+            max-width: 200px;
+        }
+        .advantaches-img__key{
+            max-width: 150px;
+        }
+}
+
+@media screen and (max-width: 767px){
+
+    .advantaches-text {
+            font-size: 18px;
+    
+            &::before {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+            .advantaches-img__bottle {
+                    max-width: 200px;
+                    display: none;
+                }
+            
+                .advantaches-img__key {
+                    max-width: 150px;
+                    display: none;
+                }
+
+                .btn-list{
+                    display: block;
+                    margin: 0 auto;
+                    
+                    &__item{
+                        margin-bottom: 10px;
+                        width: 100%;
+                    }
+                }
+                
+}
