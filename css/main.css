@@ -584,7 +584,7 @@ a {
   }
 }
 .search {
-  max-height: 700px;
+  height: 700px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,6 +694,9 @@ a {
   }
 }
 @media screen and (max-width: 767px) {
+  .search {
+    height: 400px;
+  }
   .search-set {
     display: block;
     margin: 0 auto;
