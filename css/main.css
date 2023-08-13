@@ -22,7 +22,7 @@
 }
 @media screen and (max-width: 767px) {
   .section {
-    padding-top: 75px;
+    padding-top: 50px;
     padding-bottom: 35px;
   }
   .section-title {
@@ -924,7 +924,7 @@ a {
 }
 
 .info-warning {
-  width: 1200px;
+  max-width: 1200px;
   height: 300px;
   padding-bottom: 20px;
 }
@@ -958,6 +958,13 @@ a {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .info-warning {
+    max-width: 1200px;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+}
 .footer {
   background-color: var(--primary-text-color);
 }

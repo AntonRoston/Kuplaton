@@ -6,7 +6,7 @@
 }
 
 .info-warning {
-    width: 1200px;
+    max-width: 1200px;
     height: 300px;
     padding-bottom: 20px;
 }
@@ -38,4 +38,11 @@
     color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+    .info-warning {
+            max-width: 1200px;
+            height: 100%;
+            padding-bottom: 20px;
+        }
+}
