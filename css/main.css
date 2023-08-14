@@ -469,8 +469,9 @@ a {
   }
   .mobail-logo {
     display: block;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
+    color: var(--primary-text-color);
   }
   .site-nav__item {
     padding: 0;
@@ -1073,5 +1074,55 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+.btn-up {
+  position: fixed;
+  left: 20px;
+  bottom: 30px;
+  border: solid rgb(255, 214, 51) 2px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: opacity 0.15s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.15s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+.btn-up_hiding {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.btn-up-icon {
+  width: 40px;
+  height: 40px;
+  fill: currentcolor;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    -webkit-transform: scale(1.1, 1.1) translateY(-3px);
+            transform: scale(1.1, 1.1) translateY(-3px);
   }
 }/*# sourceMappingURL=main.css.map */
