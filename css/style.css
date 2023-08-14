@@ -295,8 +295,6 @@ a {
 	background-image: linear-gradient(rgba(255, 255, 255, 1), var(--firm-site-color) 200px, rgba(255, 255, 255, 1));
 }
 
-.advantaches {
-}
 .advantaches-block {
 	padding-top: 40px;
 	display: flex;
@@ -394,8 +392,6 @@ a {
 }
 .search-set__item:last-child {
 	margin-right: 0;
-}
-.search-icon {
 }
 
 /* info */
