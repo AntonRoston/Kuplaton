@@ -1078,7 +1078,7 @@ a {
 }
 .btn-up {
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 30px;
   border: solid var(--accent-color) 2px;
   border-radius: 25px;
